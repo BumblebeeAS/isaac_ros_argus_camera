@@ -242,8 +242,8 @@ void ArgusCameraNode::ArgusCameraInfoCallback(
   transform_stamped.transform.rotation.y = rig_body_pose_camera_optical.getRotation().getY();
   transform_stamped.transform.rotation.z = rig_body_pose_camera_optical.getRotation().getZ();
   transform_stamped.transform.rotation.w = rig_body_pose_camera_optical.getRotation().getW();
-
-  tf_broadcaster_->sendTransform(transform_stamped);
+  //REMOVE HERE 
+  // tf_broadcaster_->sendTransform(transform_stamped);
 }
 
 void ArgusCameraNode::preLoadGraphCallback() {}
